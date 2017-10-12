@@ -64,7 +64,7 @@ const UsersProfile = (props) => {
       <div className="page users-profile">
         <Components.HeadTags url={Users.getProfileUrl(user, true)} title={Users.getDisplayName(user)} />
         <div className="users-profile-header">
-          <Components.Section contentStyle={{marginTop: '-20px'}} title={Users.getDisplayName(user)} titleComponent={<div>{ renderMeta(props) }{ renderActions(props) }</div>}>
+          <Components.Section contentStyle={{marginTop: '-20px'}} title="User Info" titleComponent={<div>{ renderMeta(props) }{ renderActions(props) }</div>}>
             {user.htmlBio ? <div className="users-profile-bio" dangerouslySetInnerHTML={{__html: user.htmlBio}}></div> : null }
           </Components.Section>
         </div>

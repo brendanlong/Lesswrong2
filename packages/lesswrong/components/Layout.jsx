@@ -25,9 +25,6 @@ const Layout = ({currentUser, children, currentRoute, userAgent}) => {
         "accent3Color": "#c8e6c9",
         "pickerHeaderColor": "#4caf50"
       },
-      "appBar": {
-        "textColor": "rgba(0, 0, 0, 0.54)"
-      },
       "datePicker": {
         "color": "rgba(0,0,0,0.54)",
         "selectTextColor": "rgba(0,0,0,0.54)",

@@ -34,12 +34,21 @@
   left:64px;
   color:$medium-text;
 
-  &:hover {
+  a:hover {
     text-decoration:none;
     color:$light-text;
   }
 }
+.header-site-section {
+  margin-left: 1em;
+  padding-left: 1em;
+  text-transform: uppercase;
+  border-left:1px solid $light-grey;
 
+  &.user {
+    color:white;
+  }
+}
 .nav{
   @include flex-center;
   @include small{

@@ -8,8 +8,9 @@ import FontIcon from 'material-ui/FontIcon';
 
 const iconStyle = {
   color: 'rgba(0,0,0,0.5)',
-  fontSize: '16px',
-  verticalAlign: 'sub'
+  fontSize: '18px',
+  verticalAlign: 'sub',
+  marginRight: '3px'
 }
 
 const UsersProfile = (props) => {
@@ -64,8 +65,8 @@ const UsersProfile = (props) => {
       <div className="page users-profile">
         <Components.HeadTags url={Users.getProfileUrl(user, true)} title={Users.getDisplayName(user)} />
         <div className="users-profile-header">
-          <Components.Section contentStyle={{marginTop: '-20px'}} title="User Info" titleComponent={<div>{ renderMeta(props) }{ renderActions(props) }</div>}>
-            {user.htmlBio ? <div className="users-profile-bio" dangerouslySetInnerHTML={{__html: user.htmlBio}}></div> : null }
+          <Components.Section contentStyle={{marginTop: '-20px'}} titleComponent={<div>{ renderMeta(props) }</div>}>
+            { renderActions(props) }
           </Components.Section>
         </div>
         {user.frontpagePostCount > 0 && <Components.Section title="Frontpage Posts"

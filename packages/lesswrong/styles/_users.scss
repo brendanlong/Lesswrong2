@@ -55,12 +55,6 @@
   }
 }
 
-.users-profile-actions {
-  & > div {
-    margin-left: 8px;
-  }
-}
-
 .users-profile-bio {
   font-size: 1.1rem;
   padding-top: 15px;
@@ -84,12 +78,20 @@
 .users-profile-header-meta {
   & > div {
     display: inline;
-    margin-left: 5px;
+    margin-left: 10px;
+    font-size: 16px;
   }
 }
 
 .users-profile-actions {
-  margin-top: 8px;
+  margin-top: 26px;
+  div {
+    float:left;
+    margin-left:20px;
+    font-style:normal;
+    font-variant: small-caps;
+
+  }
   & > div {
     font-size: 18px;
     font-style: italic;
